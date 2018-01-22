@@ -1,0 +1,54 @@
+#splash{
+  background-color: #424242;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  color: #ffab00;
+  font-size: 400%;
+  font-weight: 50;
+}
+
+.inicio{
+  margin-top: 50%;
+}
+
+body{
+  background-color: #424242;
+}
+
+.encabezado{
+  text-align: center;
+  color: #ffab00;
+  font-size: 400%;
+  font-weight: 50;
+}
+
+hr{
+  margin: 0px;
+}
+
+#mapa{
+  text-align: center;
+}
+
+iframe{
+  width: 100%;
+}
+
+.titulo{
+  font-size: 250%;
+  font-weight:50;
+  text-align: center;
+  color: #ffab00;
+}
+
+img{
+  width: 100px;
+  height: 100px;
+  margin: 1%;
+}
+
+#list-rest{
+  text-align: center;
+}
