@@ -18,19 +18,24 @@ function loadPage(){
 
 
 function tipoComida(){
+//  var valor=$tipo.val();
   var valor=document.getElementById('selec-tipo').value
   for(var i in data){
     if(data[i].tipo === valor){
-    var hrefImage=document.createElement('a');
-    hrefImage.href=$('.modal');
-    var image=document.createElement('img');
-    image.src=data[i].imagen;
-    hrefImage.appendChild(image);
-    document.getElementById('list-rest').appendChild(hrefImage);
-  /*
-      var image = document.createElement("img");
+      var hrefImage=document.createElement('a');
+      hrefImage.href='#modal1';
+      hrefImage.classList.add("modal-trigger");
+      var image=document.createElement('img');
       image.src=data[i].imagen;
-      $(".list-rest").html(image);*/
+      image.setAttribute('value',i);
+      hrefImage.appendChild(image);
+      document.getElementById('list-rest').appendChild(hrefImage);
+
+    /*  var $image= $('<img/>', {
+        'src':data[i].imagen,
+        'data-target':'modal1'
+      });
+      $("#list-rest").append($image);*/
     }
   }
 }
